@@ -1,0 +1,33 @@
+h1::before{
+    content: "❤";
+}
+.div::before{
+content: 🤷‍♂️;
+}
+.div::before{
+    content: "❤";
+}
+
+h1::after{
+    content: "❤";
+}
+
+p::first-line{
+    color:chartreuse;
+    font-weight: bolder;
+    font-size: 30px;
+}
+span{
+    font-weight: 200;
+}
+input::placeholder{
+    color:green;
+    font-size: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.input::before{
+    content: "🐱‍🐉";
+    position: absolute;
+    transform: translateY(50%)
+    
+}

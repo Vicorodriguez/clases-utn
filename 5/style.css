@@ -1,0 +1,30 @@
+li{
+    border: solid black 2px;
+}
+
+li:first-child{
+    color: red;
+    border: none
+}
+
+li:last-child{
+    color:blueviolet;
+    border: none
+}
+li:nth-child(3){
+    font-size: 24px;
+    color: cadetblue;
+}
+li:nth-child(5n+1){
+    text-decoration: line-through;
+}
+li:nth-child(3n){
+    text-transform: uppercase;
+    color:blue;
+}
+li:nth-child(even){
+    background-color: lightgreen;
+}
+li:nth-child(odd){
+    background-color: lightsalmon;
+}

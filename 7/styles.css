@@ -1,0 +1,23 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+}
+/* 1 */
+.animacion-basica:hover{
+    /* fadeIn es un nombre arbitrario */
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+}
+/* Define como funciona la animacion en termino de pasos */
+@keyframes fadeIn{
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

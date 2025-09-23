@@ -1,0 +1,47 @@
+.flex-container{
+    display: flex;
+    background-color: gray;
+    border: 2px solid black;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+.flex-item{
+    background-color: lightgreen;
+    border:2px solid black;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 30px;
+}
+
+.flex-equal-space{
+    justify-content: space-evenly;
+}
+
+.flex-fixed-flexible{
+    
+    justify-content: space-between;
+}
+
+.flex-fixed-flexible .fixed{
+    width: 100px;
+    flex-grow: 2;
+    
+}
+
+.flex-fixed-flexible .flexible{
+    flex-grow: 2;
+}
+
+.flex-align-center{
+    height: 300px;
+    justify-content:  center;
+    align-items: center;
+
+}
+
+.flex-item-2{
+    width: 700px;
+    background-color: lightcoral;
+}
