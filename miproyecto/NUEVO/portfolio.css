@@ -1,0 +1,164 @@
+.img.logo{
+    size: 100px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.space-grotesk-700 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-optical-sizing: auto;
+  text-align: center;
+  font-weight: 100;
+  font-style: normal;
+  background-color: whitesmoke;
+  color: gray;
+}
+
+.logo{
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    transition: all 0.7s ease-in;
+    text-align: center;
+}
+
+.navbar-brand:hover{
+    filter: drop-shadow(2px 4px 6px rgb(255, 253, 192));
+    animation: navbar-brand 1.5s ease-in forwards;
+}
+@keyframes navbar-brand{
+    0%{transform: translateY(0) ; opacity: 1;}
+    100%{ transform: translateY(-300px); opacity: 0;}
+}
+
+nav, footer{
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(221, 225, 224) 100%);
+    font-size: large;
+
+}
+
+.img-logo{
+    width: 100px;
+    vertical-align: middle;
+    box-sizing: inherit;
+}
+
+.navbar-navbar-expand-lg-bg-secondary .container-fluid .navbar-brand .img-logo{
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0;
+    width: 500px;
+    
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 7px;
+   
+    
+}
+
+nav ul li a:hover{
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.bg-secondary{
+    background-color: transparent !important;
+}
+
+.row{
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.col{
+   box-shadow: 0 1rem 3rem rgba(black, .175); 
+   margin-left: 10px;
+   margin-right: 10px;
+}
+.col:hover{
+    animation: col 2s forwards;
+}
+
+@keyframes col{
+    from {transform: scale(1.0); background-color: tomato;}
+    to { transform: scale(1.5);background-color: green; 
+   color: white;}
+}
+
+.footer {
+  background: #f5f5f5;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footer-column a:hover {
+  color: #000;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #555;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  color: #777;
+}

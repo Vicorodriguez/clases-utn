@@ -1,0 +1,138 @@
+body{
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+div img{
+    width: 100px;
+    object-fit: contain;
+}
+
+.animacion-basica:hover{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+from {opacity: 0;}
+to { opacity: 1;}
+}
+
+.fill-forwards:hover{
+    animation: crecer 2s forwards;
+}
+
+.fill-backwards:hover{
+    animation: crecer 2s 1s backwards;
+}
+.fill-both:hover{
+    animation: crecer 2s 1s backwards;
+}
+.fill-none:hover{
+    animation: crecer 2s 1s infinite backwards;
+}
+
+@keyframes crecer{
+    from {transform: scale(0.5); background-color: tomato;}
+    to { transform: scale(1.5);background-color: green; 
+   color: white;}
+}
+
+.direction-normal:hover{
+    animation: girar 2s infinite normal linear;
+}
+.direction-reverse:hover{
+    animation: girar 2s infinite reverse linear;
+}
+.direction-alternate:hover{
+    animation: girar 2s infinite alternate linear;
+}
+
+@keyframes girar{
+    from { transform: rotate (0deg);}
+    to { transform: rotate(360deg);}
+}
+
+.repetir-tres:hover{
+    animation: saltar 1s 3;
+}
+
+.repetir-cinco:hover{
+    animation: saltar 1s 5;
+}
+@keyframes  saltar{
+    0%{transform: translateY(0);}
+    50% {transform: translateY(-100px);}/* lo hace subir ese -30px*/
+    100% { transform: translateY(0)}
+}
+.transformaciones:hover{
+    transform: translateX(50px) rotate(15deg)scale(1.2)
+    skew(10deg, 5deg);
+    background-color:brown;
+    transition: transform 0.4s ease-in-out; }
+
+    
+
+.flip-horizontal-bottom{
+    width: 150px;
+    height: 150px;
+    background: tomato;
+    display: inline-block;
+    margin: 0 auto;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-animation:flip-horizontal-bottom .4s cubic-bezier(.455,.03,.515,.955) both;
+    animation:flip-horizontal-bottom .4s cubic-bezier(.455,.03,.515,.955) both;
+}
+
+@-webkit-keyframes flip-horizontal-bottom{
+    0%{-webkit-transform:rotateX(0);
+        transform:rotateX(0);}
+        100%{-webkit-transform:rotateX(-180deg);
+            transform:rotateX(-180deg);}
+        }
+        
+@keyframes flip-horizontal-bottom{
+         0%{-webkit-transform:rotateX(0);
+                    transform:rotateX(0);}
+        100%{-webkit-transform:rotateX(-180deg);
+            transform:rotateX(-180deg);}
+        }
+
+.perspectiva-container{
+    perspective: 800px;
+}
+
+.box-3d:hover {
+    animation: rotarY 3s infinite alternate ease in-out;
+    transform-style:preserve-3d;
+}
+@keyframes rotarY{
+    from { transform: rotateY(0deg) }
+    to { transform:rotateY(180deg) }
+}
+.transicion{
+    transition: all 0.5s ease in out;
+    transition: transform 0.5s;
+}
+.transicion:hover{
+    background-color: orange;
+    transform: scale(1.3) rotate(20deg);
+}
